@@ -19,7 +19,7 @@ const ToDoList = () => {
     console.log('Filtered To-Dos: ', filteredToDos);
 
     return (
-        <div className='text-white'>ToDoList</div>
+        <div className='text-white'>ToDoList Area</div>
     )
 }
 
