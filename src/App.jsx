@@ -1,16 +1,18 @@
 // import { useState } from 'react';
 import React from 'react';
+import { Provider } from "react-redux";
+import store from "./redux/Store";
+import ToDo from "./components/ToDo";
 import './App.css';
+
 
 function App() {
 
 
   return (
-    <>
-      <h1 className='text-3xl font-bold'>
-        Hello world!!
-      </h1>
-    </>
+    <Provider store={store}>
+      <ToDo />
+    </Provider>
   )
 }
 
