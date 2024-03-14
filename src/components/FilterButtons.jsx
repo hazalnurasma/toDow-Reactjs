@@ -22,7 +22,7 @@ const FilterButtons = () => {
                 <option value="INCOMPLETE">Incomplete</option>
             </select>
 
-            <button onClick={() => dispatch(markAllComplete())} className="text-sm px-2 py-2 bg-purple-600 text-white ml-2 rounded">
+            <button onClick={() => dispatch(markAllComplete())} className="text-sm px-2 py-2 bg-fuchsia-800 hover:bg-fuchsia-900 text-white ml-2 rounded border border-gray-400">
                 Mark All Completed
             </button>
         </div>

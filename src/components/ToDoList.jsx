@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useSelector } from 'react-redux';
+import ToDoItem from './ToDoItem';
 
 const ToDoList = () => {
     const filteredToDos = useSelector((state) => {
@@ -19,9 +21,18 @@ const ToDoList = () => {
     console.log('Filtered To-Dos: ', filteredToDos);
 
     return (
-        <div className='text-white'>ToDoList Area</div>
+        <ul>
+            <li className="my-2 text-white text-sm underline">All Your Notes Here:</li>
 
-        // 1s26d46s https://www.youtube.com/watch?v=PCqcxJPJ2hQ&t=94s
+            {
+                filteredToDos.map((todo, index) => (
+                    // <li key={index}>{todo.text}</li>
+                    <ToDoItem key={index} todo={todo} index={index} />
+                ))
+            }
+        </ul>
+
+
     )
 }
 

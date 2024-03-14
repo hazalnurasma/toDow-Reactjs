@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { CiCirclePlus, CiSearch } from "react-icons/ci";
@@ -31,8 +32,8 @@ function ToDo() {
     };
 
     return (
-        <div className='max-w-4xl mx-auto sm:mt-8 p-4 bg-gray-600 rounded'>
-            <h2 className='mt-3 mb-6 text-2xl font-bold text-center text-white uppercase'> Personal To-Do App </h2>
+        <div className='max-w-4xl mx-auto sm:mt-24 p-4 bg-gray-400 bg-opacity-50 rounded backdrop-filter backdrop-blur-lg'>
+            <h2 className='mt-3 mb-6 text-2xl font-bold text-center text-white uppercase'> Hazal's To-Do App </h2>
 
             {/* input text and buttons */}
 
@@ -47,7 +48,7 @@ function ToDo() {
                 className='flex-grow p-2 border-b-2 border-gray-300 focus: outline-none focus:border-purple-600 rounded'
                 />
 
-                <button className='ml-4 p-2 bg-pink-600 hover:bg-pink-700 text-white rounded focus:outline-none' onClick={handleAddToDoClick}>
+                <button className='ml-4 p-2 bg-blue-800 hover:bg-blue-900 text-white rounded focus:outline-none border border-gray-400' onClick={handleAddToDoClick}>
                     <CiCirclePlus className='w-7 h-7'/>
                 </button>
             </div>
@@ -69,7 +70,7 @@ function ToDo() {
                     className='flex-grow p-2 border-b-2 border-gray-300 focus: outline-none focus:border-purple-600 rounded'
                     />
 
-                    <button className='ml-4 p-2 bg-purple-600 hover:bg-purple-500 text-white rounded focus:outline-none'>
+                    <button className='ml-4 p-2 bg-fuchsia-800 hover:bg-fuchsia-950 text-white rounded focus:outline-none border border-gray-400'>
                         <CiSearch className='w-7 h-7'/>
                     </button>
                 </div>

@@ -10,6 +10,26 @@
   background-color: rgb(34, 33, 33);
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  padding-top: 1vh;
+  height: 100vh;
+  background: linear-gradient(90deg, #0c316e, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+} 
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
